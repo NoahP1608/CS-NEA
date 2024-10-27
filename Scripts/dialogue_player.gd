@@ -40,7 +40,7 @@ func show_text():
 	
 func finish():
 	text_lable.text = ""
-	background.visable = false
+	background.visible = false
 	in_progress = false
 	get_tree().paused = false
 		
@@ -48,8 +48,8 @@ func on_display_dialogue(text_key):
 	if in_progress:
 		next_line() 
 	else:
-		#get_tree().pause = true
-		#background.visable = true
+		get_tree().paused = true
+		background.visible = true
 		in_progress = true
 		selected_text = scene_text[text_key].duplicate()
 		show_text()

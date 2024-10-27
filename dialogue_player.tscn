@@ -14,4 +14,4 @@ offset_bottom = 40.0
 [node name="TextLabel" type="Label" parent="."]
 offset_right = 98.0
 offset_bottom = 80.0
-text = "h"
+text = "hello there"
