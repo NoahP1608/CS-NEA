@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bdsxxgoj1c2r0"]
+[gd_scene load_steps=3 format=3 uid="uid://bdsxxgoj1c2r0"]
 
 [ext_resource type="Script" path="res://Scripts/dialogue_player.gd" id="1_hv60m"]
+[ext_resource type="FontFile" uid="uid://d25b5eu27ywga" path="res://Assests/Retro Gaming.ttf" id="2_ofm5e"]
 
 [node name="DialoguePlayer" type="CanvasLayer"]
 process_mode = 1
@@ -14,3 +15,4 @@ offset_bottom = 40.0
 [node name="TextLabel" type="Label" parent="."]
 offset_right = 98.0
 offset_bottom = 80.0
+theme_override_fonts/font = ExtResource("2_ofm5e")
