@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdsxxgoj1c2r0"]
+
+[ext_resource type="Script" path="res://Scripts/dialogue_player.gd" id="1_hv60m"]
+
+[node name="DialoguePlayer" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_hv60m")
+text_file = "res://json/dialouge.json"
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextLabel" type="Label" parent="."]
+offset_right = 98.0
+offset_bottom = 80.0
+text = "h"

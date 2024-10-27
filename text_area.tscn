@@ -1,14 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://cggj0u8jq2meb"]
+[gd_scene load_steps=3 format=3 uid="uid://cggj0u8jq2meb"]
 
 [ext_resource type="Script" path="res://Scripts/text_area.gd" id="1_od6wt"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yails"]
+
 [node name="TextArea" type="Area2D"]
-process_mode = 2
+process_mode = 3
 collision_layer = 0
 collision_mask = 4
 script = ExtResource("1_od6wt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_yails")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="area_exited" from="." to="." method="_on_area_exited"]
