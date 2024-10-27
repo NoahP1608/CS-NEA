@@ -664,7 +664,7 @@ shape = SubResource("RectangleShape2D_ns1no")
 
 [node name="TextAreaSign2" parent="." instance=ExtResource("7_xcoak")]
 position = Vector2(680, 262)
-text_key = "sign"
+text_key = "sign2"
 
 [node name="CollisionShape2D" parent="TextAreaSign2" index="0"]
 position = Vector2(0.5, -7.5)

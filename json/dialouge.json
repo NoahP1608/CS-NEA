@@ -1,6 +1,10 @@
 {
 	"sign": [
-	"Welcome to the game!"
+	"Welcome to the game!",
+	"Goodbye!"
+	],
+	"sign2": [
+		"Welcome to the grove"
 	]
 
 }
