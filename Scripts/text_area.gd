@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var text_key = "sign"
+@export var text_key = ""
 var active = false
 
 
