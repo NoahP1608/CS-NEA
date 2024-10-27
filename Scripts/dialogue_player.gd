@@ -12,7 +12,7 @@ var in_progress = false
 func _ready():
 	scene_text = load_scene_text()
 	print(scene_text)
-	#Bus.show_text.connect(on_display_dialogue)
+	Bus.show_text.connect(on_display_dialogue)
 
 func load_scene_text():
 	var file = FileAccess.open(text_file, FileAccess.READ)
@@ -20,12 +20,8 @@ func load_scene_text():
 		var json = JSON.new()
 		var content = file.get_as_text()
 		file.close()  
-		var result = json.parse(content)  
-		print(content)
-		if result != 0:
-			print('we have parsed')
-		else:
-			print('no parsing occured')
+		#var result = json.parse(content) 
+		var result = JSON.parse_string(content) 
 		return result
 		
 	else:
@@ -55,5 +51,5 @@ func on_display_dialogue(text_key):
 		#get_tree().pause = true
 		#background.visable = true
 		in_progress = true
-		#selected_text = scene_text[text_key].duplicate()
+		selected_text = scene_text[text_key].duplicate()
 		show_text()
