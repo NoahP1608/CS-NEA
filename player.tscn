@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dysv0y1g1f5tv"]
+[gd_scene load_steps=12 format=3 uid="uid://dysv0y1g1f5tv"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_5eeua"]
 [ext_resource type="Texture2D" uid="uid://feee7uynvbfl" path="res://Assests/adventurer_sprite_sheet_v1.1.png" id="2_6rlld"]
@@ -89,6 +89,9 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ldahl"]
 size = Vector2(10, 15)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gn3eg"]
+size = Vector2(71.25, 67.5)
+
 [node name="Player" type="CharacterBody2D"]
 z_index = 1
 y_sort_enabled = true
@@ -136,6 +139,15 @@ position = Vector2(1.49012e-07, 1.25)
 shape = SubResource("RectangleShape2D_ldahl")
 
 [node name="attackcooldown" type="Timer" parent="."]
+
+[node name="dialouge_detector" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dialouge_detector"]
+position = Vector2(-4.375, 2.5)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_gn3eg")
 
 [connection signal="timeout" from="attacktimer" to="." method="_on_attacktimer_timeout"]
 [connection signal="body_entered" from="playerhitbox" to="." method="_on_playerhitbox_body_entered"]

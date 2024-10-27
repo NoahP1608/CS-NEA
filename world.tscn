@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://c2ge5as6dmai2"]
+[gd_scene load_steps=14 format=3 uid="uid://c2ge5as6dmai2"]
 
 [ext_resource type="PackedScene" uid="uid://dysv0y1g1f5tv" path="res://player.tscn" id="1_mxqbl"]
 [ext_resource type="Texture2D" uid="uid://eg63y7dmwehh" path="res://Assests/sprites/objects/objects.png" id="2_mf4v7"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://wrghxel5twso" path="res://Assests/sprites/tilesets/grass.png" id="4_t2l5m"]
 [ext_resource type="Texture2D" uid="uid://7niu5e6efiyo" path="res://Assests/FREE_FantasyOverflow_tileset_16x16.png" id="5_r8148"]
 [ext_resource type="PackedScene" uid="uid://dvp2fqv03e3sy" path="res://enemy.tscn" id="6_o3vwc"]
+[ext_resource type="PackedScene" uid="uid://cggj0u8jq2meb" path="res://text_area.tscn" id="7_xcoak"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y4l7l"]
 texture = ExtResource("2_mf4v7")
@@ -627,6 +628,9 @@ sources/1 = SubResource("TileSetAtlasSource_plbrs")
 sources/2 = SubResource("TileSetAtlasSource_3guj6")
 sources/6 = SubResource("TileSetAtlasSource_mysud")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ns1no"]
+size = Vector2(14, 12)
+
 [node name="World" type="Node2D"]
 y_sort_enabled = true
 
@@ -649,3 +653,13 @@ layer_1/tile_data = PackedInt32Array(655408, 0, 5, 720937, 65538, 4, 786476, 0, 
 
 [node name="enemy" parent="." instance=ExtResource("6_o3vwc")]
 position = Vector2(331, 372)
+
+[node name="TextAreaSign" parent="." instance=ExtResource("7_xcoak")]
+position = Vector2(425, 262)
+text_key = "sign"
+
+[node name="CollisionShape2D" parent="TextAreaSign" index="0"]
+position = Vector2(-1, 1)
+shape = SubResource("RectangleShape2D_ns1no")
+
+[editable path="TextAreaSign"]
