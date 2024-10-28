@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-
+#100
 const WALKSPEED = 100
 
 var enemy_in_attack_range = false
@@ -24,7 +24,7 @@ func _physics_process(delta):
 			$AnimationPlayer.play('attack') #if not moving and the attack state is active than play the attack
 		else:
 			$AnimationPlayer.play('idle') #else play the idle animation
-	velocity = direction*WALKSPEED*delta
+	velocity = direction*WALKSPEED
 	move_and_slide()
 	if health <= 0:
 		print('Player dead')
