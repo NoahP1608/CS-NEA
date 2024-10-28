@@ -24,7 +24,7 @@ func _physics_process(delta):
 			$AnimationPlayer.play('attack') #if not moving and the attack state is active than play the attack
 		else:
 			$AnimationPlayer.play('idle') #else play the idle animation
-	velocity = direction*WALKSPEED
+	velocity = direction*WALKSPEED*delta
 	move_and_slide()
 	if health <= 0:
 		print('Player dead')
