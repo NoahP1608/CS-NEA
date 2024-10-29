@@ -5,8 +5,8 @@
 
 [node name="DialoguePlayer" type="CanvasLayer"]
 process_mode = 1
-offset = Vector2(500, 200)
-transform = Transform2D(1, 0, 0, 1, 500, 200)
+offset = Vector2(280, 200)
+transform = Transform2D(1, 0, 0, 1, 280, 200)
 script = ExtResource("1_hv60m")
 text_file = "res://json/dialouge.json"
 
