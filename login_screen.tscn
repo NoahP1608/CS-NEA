@@ -1,15 +1,53 @@
-[gd_scene format=3 uid="uid://dho5su4b4qkqg"]
+[gd_scene load_steps=2 format=3 uid="uid://dho5su4b4qkqg"]
+
+[ext_resource type="Script" path="res://Scripts/login_screen.gd" id="1_wuftj"]
 
 [node name="Login Screen" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -3.0
+offset_top = -38.0
+offset_right = -3.0
+offset_bottom = -38.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_wuftj")
+
+[node name="Username" type="TextEdit" parent="."]
+layout_mode = 2
+offset_left = 476.0
+offset_top = 273.0
+offset_right = 726.0
+offset_bottom = 308.0
+
+[node name="Password" type="TextEdit" parent="."]
+layout_mode = 2
+offset_left = 476.0
+offset_top = 312.0
+offset_right = 726.0
+offset_bottom = 349.0
 
 [node name="Button" type="Button" parent="."]
-layout_mode = 0
-offset_right = 70.0
-offset_bottom = 29.0
+layout_mode = 2
+offset_left = 475.0
+offset_top = 379.0
+offset_right = 725.0
+offset_bottom = 410.0
 text = "Login"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+modulate = Color(0.67, 0.0871, 0.388265, 1)
+layout_mode = 0
+offset_left = 462.0
+offset_top = 450.0
+offset_right = 768.0
+offset_bottom = 498.0
+text = "Incorrect username and password"
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
