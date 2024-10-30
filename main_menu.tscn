@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://4fkpumusrhlk"]
+[gd_scene load_steps=7 format=3 uid="uid://4fkpumusrhlk"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_f25ta"]
+[ext_resource type="FontFile" uid="uid://d25b5eu27ywga" path="res://Assests/Retro Gaming.ttf" id="2_s881j"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rumlo"]
 bg_color = Color(1, 1, 1, 1)
@@ -60,6 +61,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_s881j")
 theme_override_styles/normal = SubResource("StyleBoxFlat_rumlo")
 theme_override_styles/hover = SubResource("StyleBoxFlat_se3qw")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_77w02")
@@ -74,6 +76,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_s881j")
 theme_override_styles/normal = SubResource("StyleBoxFlat_rumlo")
 theme_override_styles/hover = SubResource("StyleBoxFlat_se3qw")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_77w02")
@@ -88,6 +91,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_s881j")
 theme_override_styles/normal = SubResource("StyleBoxFlat_rumlo")
 theme_override_styles/hover = SubResource("StyleBoxFlat_se3qw")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_77w02")
@@ -105,6 +109,7 @@ offset_top = 185.0
 offset_right = 16.0
 offset_bottom = 211.0
 grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_s881j")
 theme_override_font_sizes/font_size = 50
 text = "RPG"
 
