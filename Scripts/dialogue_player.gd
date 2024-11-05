@@ -53,3 +53,5 @@ func on_display_dialogue(text_key):
 		in_progress = true
 		selected_text = scene_text[text_key].duplicate()
 		show_text()
+		
+
