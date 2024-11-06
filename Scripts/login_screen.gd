@@ -21,6 +21,7 @@ func _on_button_pressed():
 	elif created:
 		if username == storedUsername and password == storedPassword:
 			print("correct login")
+			get_tree().change_scene_to_file("res://main_menu.tscn")
 		else:
 			message.visible = true
 			$Timer.start() 
