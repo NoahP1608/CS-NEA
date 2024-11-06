@@ -35,7 +35,7 @@ offset_left = 475.0
 offset_top = 379.0
 offset_right = 725.0
 offset_bottom = 410.0
-text = "Login"
+text = "Sign Up"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 modulate = Color(0.67, 0.0871, 0.388265, 1)
