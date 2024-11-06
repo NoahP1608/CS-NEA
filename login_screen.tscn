@@ -47,7 +47,7 @@ offset_bottom = 498.0
 text = "Incorrect username and password"
 
 [node name="Timer" type="Timer" parent="."]
-autostart = true
+wait_time = 2.0
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
