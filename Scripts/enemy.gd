@@ -58,8 +58,7 @@ func damage():
 	if enemyHealth <= 0:
 		dead = true
 		$AnimatedSprite2D.play("death")
-		$deathTimer.start()
-		
+		$deathTimer.start()		
 		
 func updateHealth():
 	var HealthBar = $HealthBar
@@ -80,3 +79,6 @@ func get_distance():
 
 func _on_death_timer_timeout():
 	queue_free()
+	
+	
+	
