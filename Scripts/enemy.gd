@@ -17,6 +17,7 @@ func _physics_process(delta):
 		return
 	var direction = get_direction()
 	var distance_to_player = get_distance()
+	print(distance_to_player)
 	if player_chase and not player_touching and not dead: #only chase the player if they are in the radius but not touching them
 		velocity = direction*speed
 		move_and_slide()
