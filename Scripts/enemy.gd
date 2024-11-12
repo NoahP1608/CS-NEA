@@ -65,10 +65,10 @@ func updateHealth():
 	HealthBar.value = enemyHealth
 
 func get_direction():
-	if player == null:
+	if player == null: #if player hasnt spawned in yet, return nothing 
 		return 
 	else:
-		return (player.position - position).normalized()
+		return (player.position - position).normalized() #when player is in world calcualte the direction using the postion attributes 
 		
 func get_distance():
 	if player == null:
