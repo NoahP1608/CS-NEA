@@ -31,7 +31,4 @@ func _on_button_pressed():
 	$Timer.start()
 
 func _on_timer_timeout():
-	print('siefh')
 	message.visible = false 
-	var username = $Username
-	var password = $Password
