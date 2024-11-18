@@ -45,8 +45,11 @@ func _on_attackcooldown_timeout():
 	enemy_attack_cooldown = true #timer has gone off so the enemy can now attack again
 
 func _on_playerhitbox_body_entered(body):
-	if body.name == "enemy":
+	if 'enemy' in body.name:
+		print('An enemy is attacking you')
 		enemy_in_attack_range = true #if the enemy collides with the player they can attack
+	else:
+		print('A non enemy is attacking you')
 	
 func _on_playerhitbox_body_exited(body):
 	if body.name == "enemy":
