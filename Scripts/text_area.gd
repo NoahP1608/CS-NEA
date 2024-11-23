@@ -6,6 +6,7 @@ var active = false
 
 
 func _process(delta):
+	print(active)
 	if active and Input.is_action_just_pressed("talk"):
 		Bus.emit_signal("show_text", text_key)
 
